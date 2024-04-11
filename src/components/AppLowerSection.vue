@@ -56,17 +56,21 @@
 
     .main-container{
         display: flex;
-        padding: 44px;
+        justify-content: space-evenly;
+        padding: 40px;
         color: white;
+        white-space:nowrap;
+
 
         div{
             display: flex;
             align-items: center;
+            gap: 10px;
             margin: 0 auto;
 
             img{
-                max-height: 55px;
-                max-width: 55px;
+                max-height: 33%;
+                max-width: 33%;
             }
         }
     }

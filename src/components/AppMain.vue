@@ -23,6 +23,7 @@
     main{
         background-color: #1C1C1C;
         color: white;
+        padding: 50px;
     }
 
 </style>
