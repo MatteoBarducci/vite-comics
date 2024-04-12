@@ -3,6 +3,8 @@
   import AppMain from './components/AppMain.vue';
   import AppLowerSection from './components/AppLowerSection.vue';
   import AppFooter from './components/AppFooter.vue';
+  import AppFooterBtm from './components/AppFooterBtm.vue';
+
 
 
 
@@ -12,6 +14,7 @@
       AppMain,
       AppLowerSection,
       AppFooter,
+      AppFooterBtm,
     }
   }
 </script>
@@ -23,6 +26,7 @@
     <AppLowerSection></AppLowerSection>
   </main>
   <AppFooter></AppFooter>
+  <AppFooterBtm></AppFooterBtm>
 </template>
 
 <style lang="scss">
