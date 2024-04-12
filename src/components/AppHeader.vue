@@ -59,7 +59,9 @@
             <nav class="header-right">
                 <ul>
                     <li v-for="link in links" >
-                        <a href="#" :class="{'active': link.active}">{{ link.text }}</a>
+                        <a href="#" :class="{'active': link.active}">{{ link.text }}
+                            <div v-if="link.active"></div>
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -72,7 +74,9 @@
 
     header{
         background-color: white;
-        padding: 20px;
+        position: sticky;
+        top: 0;
+        left: 0;
 
         .main-container{
             display: flex;
@@ -80,13 +84,29 @@
             align-items: center;
         }
 
+        
+
         ul{
+            height: 120px;
             display: flex;
             gap: 30px;
+            align-items: center;
+            
 
-            .active{
-                color: $brand-primary; 
+            a{
+                position: relative;
+
+                div{
+                    width: 100%;
+                    height: 4px;
+                    background-color: $brand-primary;
+                    position: absolute;
+                    bottom: -50px;
+                }
             }
         }
+    }
+    .active{
+        color: $brand-primary; 
     }
 </style>
